@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import { Container } from '@chakra-ui/react';
 import './App.css';
+import Title from './Components/Title';
+import { AddTodo } from './Components/AddTodo';
+import TodoList from './Components/TodoList';
+import VisibilityFilter from './Components/visibilityFilter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Title/>
+      <AddTodo/>
+      <TodoList/>
+      <VisibilityFilter/>
+    </Container>
   );
 }
 
